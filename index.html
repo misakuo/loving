@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>To My Intimatelover</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="http://lovejiani.duapp.com/favicon.ico">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	<EMBED src="bgm/She's The One.mp3" autostart="true" loop="true" controls=smallconsole hidden=true> 
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/*</span><br /> 
+				<span class="space"/><span class="comments">* At this moment,I miss you so much...</span><br />
+				<span class="space"/><span class="comments">* I write these code, before May 20.</span><br />
+				<span class="space"/><span class="comments">* as a short love letter I give you.</span><br />
+				<span class="space"/><span class="comments">*/</span><br /><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Silly"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Nan"</span>);<br />
+				<span class="comments">// Aug 2012, I told you I love you. </span><br />
+				i.love(u);<br />
+				<span class="comments">// Unfortunately, you didn't accepted.</span><br>
+				i.lose(u);<br>
+				<span class="comments">// Maybe  it was not the right time, <br />but I firmly believe that I met the right one.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// I couldn't help missing you</span><br />
+				i.beWith(u);<br />
+				<span class="comments">// After a lot of twists and turns, <br />October 27, 2012, finally, we got together.<br />It is an important decision.</span><br /><br />
+				<span class="keyword">for</span> (Timetogether;Eternal;Days++)<br /> {<br />
+				<span class="placeholder"/><font face=宋体 size=4px color=	#FF2D2D><strong>&#9829;</strong></font>++;<br />
+				<span class="placeholder"/>i.love(u);<br />
+				<span class="placeholder"/>MyHeart <span class="keyword">instanceof</span>  U;<br />
+				}<br />
+				<span class="comments">// Although there is 1300 km between us, my heart is always with you.</span><br />
+				i.wantToSeeU(WuHan,TianJin,AllTheTime);<br />
+				seeU.isGreatPleasure = <span class="keyword">true</span>;<br />
+				<span class="comments">// I will be with you till the end.</span><br />
+				we.beSeparate = <span class="keyword">false</span>;<br /><br />
+				I Love You baby.<br />
+				<font face=微软雅黑 size=4px color=#ff7575><b>“她把自己交给他的双臂，就像豆子裹在豆荚里”</b></font>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Nan, We have been together
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- ur silly</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2012,09,27);
+		together.setHours(12);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
